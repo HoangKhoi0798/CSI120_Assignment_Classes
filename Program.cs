@@ -32,30 +32,31 @@ namespace CSI120_Assignment_Classes
             Console.WriteLine();
 
             switch (userInput)
-                { 
+            {
                 case "1":
                     AddNewBook();
                     Menu();
-                break;
+                    break;
 
                 case "2":
                     DisplayAllBook();
                     Menu();
-                break;
+                    break;
 
                 case "3":
                     UpdateBook();
                     Menu();
-                break;
+                    break;
 
                 case "4":
-                break;
+                    Environment.Exit(0);
+                    break;
 
                 default:
-                Console.WriteLine("Invalid");
-                Console.WriteLine();
-                Menu();
-                break;
+                    Console.WriteLine("Invalid");
+                    Console.WriteLine();
+                    Menu();
+                    break;
 
 
             }
